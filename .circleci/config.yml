@@ -1,0 +1,60 @@
+version: 2.1
+
+orbs:
+  front-hub: resultadosdigitais/front-hub@1.1.1
+
+aliases:
+  - &node_image
+    - image: cimg/node:16.20-browsers
+
+  - &current_workspace
+    attach_workspace: { at: "." }
+
+  - &context
+    context: front-hub
+
+jobs:
+  install:
+    docker: *node_image
+    resource_class: medium
+    steps:
+      - checkout
+      - *current_workspace
+      - front-hub/install_dependencies
+
+  g11n:
+    docker: *node_image
+    resource_class: medium
+    steps:
+      - front-hub/restore_install_cache
+      - *current_workspace
+      - run: echo "🌎 Coleta de dados de G11n"
+      - run: yarn install
+      - run: yarn add @resultadosdigitais/g11n-lint || true
+      - run: ./runPipeline.sh || true
+
+workflows:
+  CI:
+    jobs:
+      - install:
+          <<: *context
+      - front-hub/lint:
+          <<: *context
+          requires:
+            - install
+      - front-hub/test:
+          <<: *context
+          requires:
+            - install
+      - front-hub/build:
+          <<: *context
+          requires:
+            - install
+      - g11n:
+          <<: *context
+          requires:
+            - install
+          filters:
+            branches:
+              only:
+                - main

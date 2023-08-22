@@ -1,0 +1,9 @@
+{
+    "CrowdinProjectIDv2": 1,
+    "ModifiedGrepPattern": "config/locales/.*pt-BR.yml",
+    "IgnorePaternOnExtract": "config/locales/manual",
+    "GitIgnorePattern": "en-UD.yml",
+    "FileExtension": "yml",
+    "FileType": "yaml",
+    "GitMainBranch": "master"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@resultadosdigitais/frontend-interview",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "workspaces": [
+    "packages/*"
+  ],
+  "fronthub-dependencies": [
+    "@resultadosdigitais/tangram-components",
+    "@resultadosdigitais/front-hub",
+    "@resultadosdigitais/front-hub-cli",
+    "@resultadosdigitais/front-hub-commons",
+    "@resultadosdigitais/browserslist-config",
+    "@resultadosdigitais/eslint-config-react",
+    "@resultadosdigitais/prettier-config",
+    "@resultadosdigitais/translator-manager"
+  ],
+  "packageManager": "yarn@3.6.0",
+  "engines": {
+    "node": "^16.20.0"
+  },
+  "scripts": {
+    "main": "yarn workspace @resultadosdigitais/frontend-interview-main"
+  },
+  "devDependencies": {
+    "lerna": "^7.0.1"
+  }
+}

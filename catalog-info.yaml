@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: frontend-interview
+  annotations:
+    circleci.com/project-slug: github/ResultadosDigitais/frontend-interview
+    github.com/project-slug: ResultadosDigitais/frontend-interview
+  labels:
+    rdstation.com/type: frontend_monorepo
+    language: javascript
+  tags:
+    - monorepo
+    - fronthub
+spec:
+  lifecycle: production
+  owner: group:default/frontend-platform
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: frontend-interview
+spec:
+  targets:
+    - ./packages/**/component-catalog-info.yaml

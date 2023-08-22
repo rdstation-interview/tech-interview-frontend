@@ -1,0 +1,20 @@
+{
+    "root": true,
+    "extends": [
+        "@resultadosdigitais/eslint-config-g11n"
+      ],
+      "plugins": [
+        "@resultadosdigitais/g11n-data-exporter",
+        "react",
+        "react-hooks"
+      ],
+    "processor": "@resultadosdigitais/g11n-data-exporter/dataExporterProcessor",
+    "overrides": [
+        {
+            "files": "./src/**/*",
+            "rules": {
+                "compat/compat": "off"
+            }
+        }
+    ]
+}
