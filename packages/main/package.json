@@ -35,7 +35,7 @@
     "jest-styled-components": "^7.0.3",
     "prettier": "^2.7.1",
     "react-app-rewired": "^2.2.1",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^5.0.1"
   },
   "dependencies": {
     "@resultadosdigitais/tangram-components": "^8.14.0",
