@@ -28,5 +28,13 @@ module.exports = {
     listeners: [],
     emitters: [],
   },
-  services: [],
+  services: [
+   {
+      name: 'workflow-service',
+      rootDir: '<rootDir>/api',
+      endpoints: {
+        production: 'https://api.my-project.com',
+      },
+    },
+  ],
 }
