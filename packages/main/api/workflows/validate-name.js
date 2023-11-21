@@ -1,13 +1,24 @@
 import { workflows } from '../workflows'
 
 const isValidName = (queryName = '') => {
-  if (queryName === '') return false
+  if (queryName === '')
+    return {
+      valid: false,
+      reason: 'O nome do fluxo não pode ser deixado em branco.',
+    }
 
   const index = workflows.findIndex(
     ({ name }) => formatName(name) === formatName(queryName),
   )
 
-  return index === -1
+  const valid = index === -1
+
+  return {
+    valid,
+    reason: !valid
+      ? 'O nome que você escolheu já está sendo utilizado.'
+      : undefined,
+  }
 }
 
 const formatName = name => {
@@ -19,6 +30,6 @@ export const get = (req, res) => {
 
   res.json({
     value: queryName,
-    valid: isValidName(queryName),
+    ...isValidName(queryName),
   })
 }

@@ -2,16 +2,18 @@ import { client } from '@resultadosdigitais/front-hub/http'
 
 const api = () => client.create('workflow-service')
 
-export const workflows = () => {
-  const workflowsPath = '/workflows'
+export const getWorkflows = () => {
+  const path = `/workflows`
 
-  const validateName = (name = '') => {
-    const validateNamePath = `${workflowsPath}/validate-name?name=${name}`
+  return api()
+    .get(path)
+    .then(response => response.data)
+}
 
-    return api()
-      .get(validateNamePath)
-      .then(response => response.data)
-  }
+export const validateWorkflowName = (name = '') => {
+  const path = `/workflows/validate-name?name=${name}`
 
-  return { validateName }
+  return api()
+    .get(path)
+    .then(response => response.data)
 }

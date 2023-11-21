@@ -1,5 +1,4 @@
 import {
-  Brand,
   Button,
   ButtonGroup,
   Form,
@@ -11,7 +10,7 @@ import {
 import { Pen } from '@resultadosdigitais/tangram-react-icons'
 import { useRef, useState } from 'react'
 import styled from 'styled-components'
-import { workflows } from '../apiClient/apiClient'
+import { validateWorkflowName } from '../apiClient'
 
 const Root = styled.div`
   background: var(--neutral-surface-high-emphasis);
@@ -20,8 +19,9 @@ const Root = styled.div`
 
 function App() {
   const nameRef = useRef(null)
+  const [workflowName, setWorkflowName] = useState('Fluxo sem nome')
   const [nameModalOpen, setNameModalOpen] = useState(false)
-  const [isValidName, setIsValidName] = useState(true)
+  const [nameValidation, setNameValidation] = useState({ valid: true })
 
   const openNameModal = () => setNameModalOpen(true)
   const closeNameModal = () => setNameModalOpen(false)
@@ -29,18 +29,19 @@ function App() {
   const onChangeName = async () => {
     const { value: name } = nameRef.current
 
-    const { valid } = await workflows().validateName(name)
+    const validation = await validateWorkflowName(name)
 
-    setIsValidName(valid)
+    setNameValidation(validation)
 
-    if (valid) closeNameModal()
+    if (validation.valid) {
+      closeNameModal()
+      setWorkflowName(name)
+    }
   }
 
   return (
     <Root>
       <Navbar>
-        <Brand />
-
         <Navbar.Section>
           <Text>Desafio Frontend</Text>
         </Navbar.Section>
@@ -51,7 +52,7 @@ function App() {
             endIcon={<Pen title="Renomear fluxo" />}
             onClick={openNameModal}
           >
-            Fluxo sem nome
+            {workflowName}
           </Button>
         </Navbar.Section>
 
@@ -77,7 +78,7 @@ function App() {
             Utilize um nome de fácil memorização. Ele será utilizado para sua
             identificação dentro do RD Station.
           </Text>
-          <Form.Control error={!isValidName}>
+          <Form.Control error={!nameValidation.valid}>
             <Form.Label htmlFor="inputField">Nome do fluxo</Form.Label>
             <Input
               ref={nameRef}
@@ -85,8 +86,10 @@ function App() {
               name="inputField"
               autoComplete="off"
             />
-            {!isValidName && (
-              <Form.Feedback id="nameFeedback">Ocorreu um erro</Form.Feedback>
+            {!nameValidation.valid && (
+              <Form.Feedback id="nameFeedback">
+                {nameValidation.reason}
+              </Form.Feedback>
             )}
           </Form.Control>
         </Modal.Content>

@@ -1,7 +1,7 @@
 export const workflows = [
-  { id: 'wf01', name: 'Dia das crianças' },
-  { id: 'wf02', name: 'Dia das mães' },
-  { id: 'wf03', name: 'Dia dos pais' },
+  { id: 'WF01', name: 'Dia das crianças' },
+  { id: 'WF02', name: 'Dia das mães' },
+  { id: 'WF03', name: 'Dia dos pais' },
 ]
 
 export const get = (req, res) => {
