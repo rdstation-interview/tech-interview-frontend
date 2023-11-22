@@ -14,7 +14,7 @@
     "start": "NODE_PRESERVE_SYMLINKS=1 react-app-rewired start",
     "build": "NODE_PRESERVE_SYMLINKS=1 NODE_ENV=production react-app-rewired build",
     "build:prod": "NODE_ENV=production react-app-rewired build",
-    "test": "react-app-rewired test",
+    "test": "DEBUG_PRINT_LIMIT=Infinity react-app-rewired test",
     "test:ci": "react-app-rewired test --runInBand --coverage --watchAll=false",
     "lint": "eslint src/",
     "fake": "front-hub fake"
@@ -33,6 +33,7 @@
     "@testing-library/user-event": "^13.5.0",
     "customize-cra": "^1.0.0",
     "jest-styled-components": "^7.0.3",
+    "nock": "^13.3.4",
     "prettier": "^2.7.1",
     "react-app-rewired": "^2.2.1",
     "react-scripts": "^4.0.3"
@@ -49,6 +50,9 @@
     "node": "^16.20.0"
   },
   "jest": {
+    "moduleNameMapper": {
+      "axios": "axios/dist/node/axios.cjs"
+    },
     "coveragePathIgnorePatterns": [
       "src/index.js"
     ],
