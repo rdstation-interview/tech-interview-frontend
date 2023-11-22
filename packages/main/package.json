@@ -11,7 +11,7 @@
     "src"
   ],
   "scripts": {
-    "start": "NODE_PRESERVE_SYMLINKS=1 PORT=3001 react-app-rewired start",
+    "start": "NODE_PRESERVE_SYMLINKS=1 react-app-rewired start",
     "build": "NODE_PRESERVE_SYMLINKS=1 NODE_ENV=production react-app-rewired build",
     "build:prod": "NODE_ENV=production react-app-rewired build",
     "test": "DEBUG_PRINT_LIMIT=Infinity react-app-rewired test",
