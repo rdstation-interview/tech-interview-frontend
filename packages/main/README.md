@@ -9,7 +9,7 @@ No diretório, você pode executar:
 ### `yarn start`
 
 Executa o app no modo de desenvolvimento.<br />
-Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
+Abra [http://localhost:3001](http://localhost:3001) para visualizá-lo no navegador.
 
 A página será recarregada automaticamente se você fizer edições.<br />
 Você também verá quaisquer erros de lint no console.

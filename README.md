@@ -1,25 +1,15 @@
 # @resultadosdigitais/frontend-interview
 
-Este projeto foi iniciado com [FrontHub](https://github.com/ResultadosDigitais/front-hub) e baseia-se em nosso [padrão de monorepositório frontend v1.0](https://docs.google.com/document/d/105NTcl7a8zLZ3hGIJrATm1NVu1X3ndBBu8WwFVlxDEc).
+Repositório destinado à pratica de Code Session em nossas entrevistas de frontend.
 
-# Domínio
+# Scripts disponíveis
 
-Descreva aqui o domínio(produto/negócio) que esse monorepo pertence.
+## `Inicializando`
 
-# Pacotes
+- [ ] Execute o script que inicializa a API: `yarn main fake api`
+- [ ] Execute o script que inicializa o projeto: `yarn main start`
+- [ ] Execute o script que inicializa os testes: `yarn main test --watchAll`
 
-Descreva aqui os pacotes desse monorepo.
+# IMPORTANTE
 
-### [main](https://github.com/ResultadosDigitais/@resultadosdigitais/frontend-interview/tree/main/packages/main)
-
-Pacote de exemplo gerado automaticamente pelo [FrontHub](https://github.com/ResultadosDigitais/front-hub).
-
-# Scripts da raiz
-
-## `main`
-
-Cria um alias do pacote `main` para executar scripts da raiz do monorepo.
-
-```
-yarn main start
-```
+- [ ] Sempre que um arquivo da API for atualizado, você precisa reinicializar a API
