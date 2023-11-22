@@ -1,6 +1,6 @@
-FROM node:16
+FROM mcr.microsoft.com/devcontainers/javascript-node:0-16-bullseye
 
 WORKDIR /var/app
 COPY . .
 
-ENTRYPOINT [ "./entrypoint.sh" ]
+ENTRYPOINT [ ".devcontainer/entrypoint.sh" ]
