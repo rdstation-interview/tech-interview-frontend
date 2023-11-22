@@ -3,11 +3,15 @@ version: "3"
 services:
   web:
     build:
-      context: .
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    env_file:
+      - ../.env
     tty: true
     stdin_open: true
     volumes:
-      - .:/var/app
+      - ../..:/workspaces:cached
+      - ..:/var/app
     ports:
       - "3000:3000"
       - "5000:5000"
