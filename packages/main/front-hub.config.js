@@ -29,9 +29,9 @@ module.exports = {
     emitters: [],
   },
   services: [
-   {
+    {
       name: 'workflow-service',
-      rootDir: '<rootDir>/api',
+      rootDir: '<rootDir>/src/api/mock',
       endpoints: {
         production: 'https://api.my-project.com',
       },
