@@ -10,8 +10,8 @@ export const getWorkflows = () => {
     .then(response => response.data)
 }
 
-export const validateWorkflowName = (name = '') => {
-  const path = `/workflows/validate-name?name=${name}`
+export const validateName = (name = '') => {
+  const path = `/validate-name?name=${name}`
 
   return api()
     .get(path)

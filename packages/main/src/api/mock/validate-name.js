@@ -1,6 +1,6 @@
 /**
  * Fluxos existentes podem ser importados da seguinte maneira
- * import { workflows } from '../workflows'
+ * import { workflows } from './workflows'
  */
 
 /**
