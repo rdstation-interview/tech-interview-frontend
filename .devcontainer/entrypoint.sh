@@ -9,8 +9,4 @@ echo "    npmAuthIdent: ${JFROG_USERNAME}:${JFROG_TOKEN}" >>~/.yarnrc.yml
 echo "> Executing 'yarn install' on web"
 yarn install
 
-if [ "$#" == 0 ]; then
-     yarn main start
-fi
-
-exec $@
+exec bash
