@@ -1,6 +1,9 @@
 import {
   Button,
   ButtonGroup,
+  Form,
+  Input,
+  Modal,
   Navbar,
   Text,
 } from '@resultadosdigitais/tangram-components'
@@ -18,6 +21,28 @@ const Root = styled.div`
 function App() {
   return (
     <Root>
+      <Modal>
+        <Modal.Header>Editar nome do fluxo</Modal.Header>
+
+        <Modal.Content>
+          <Text>
+            Utilize um nome de fácil memorização. Ele será utilizado para sua
+            identificação dentro do RD Station.
+          </Text>
+          <Form.Control>
+            <Form.Label htmlFor="name">Nome do fluxo</Form.Label>
+            <Input id="name" name="name" />
+          </Form.Control>
+        </Modal.Content>
+
+        <Modal.Actions>
+          <ButtonGroup>
+            <Button kind={Button.kinds.secondary}>Cancelar</Button>
+            <Button>Renomear</Button>
+          </ButtonGroup>
+        </Modal.Actions>
+      </Modal>
+
       <Navbar>
         <Navbar.Section>
           <Text>Desafio Frontend</Text>

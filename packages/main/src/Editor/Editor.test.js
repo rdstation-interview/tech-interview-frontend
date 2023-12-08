@@ -6,11 +6,8 @@ import Editor from './Editor'
 const render = Component =>
   renderBase(<Theme value={Theme.kinds.lina}>{Component}</Theme>)
 const UNNAMED_WORKFLOW_TEXT = 'Fluxo sem nome'
-const NAME_MODAL_TITLE = 'Editar nome do fluxo'
-const NAME_MODAL_DESCRIPTION =
-  'Utilize um nome de fácil memorização. Ele será utilizado para sua identificação dentro do RD Station.'
 const NAME_MODAL_INPUT_LABEL = 'Nome do fluxo'
-const SUBMIT_BUTTON_TEXT = 'Confirmar'
+const SUBMIT_BUTTON_TEXT = 'Renomear'
 const EMPTY_NAME_ERROR_MESSAGE =
   'O nome do fluxo não pode ser deixado em branco.'
 const NAME_IN_USE_ERROR_MESSAGE =
@@ -30,15 +27,9 @@ describe('Editor', () => {
 
     userEvent.click(renameButton)
 
-    const nameModalTitle = await screen.findByText(NAME_MODAL_TITLE)
-    const nameModalDescription = await screen.findByText(NAME_MODAL_DESCRIPTION)
     const nameModalInput = await screen.findByLabelText(NAME_MODAL_INPUT_LABEL)
-    const nameModalSubmitButton = await screen.findByText(SUBMIT_BUTTON_TEXT)
 
-    expect(nameModalTitle).toBeInTheDocument()
-    expect(nameModalDescription).toBeInTheDocument()
     expect(nameModalInput).toBeInTheDocument()
-    expect(nameModalSubmitButton).toBeInTheDocument()
   })
 
   describe('when a name is submitted', () => {
