@@ -14,7 +14,7 @@
     "start": "NODE_PRESERVE_SYMLINKS=1 react-app-rewired start",
     "build": "NODE_PRESERVE_SYMLINKS=1 NODE_ENV=production react-app-rewired build",
     "build:prod": "NODE_ENV=production react-app-rewired build",
-    "test": "DEBUG_PRINT_LIMIT=Infinity react-app-rewired test",
+    "test": "DEBUG_PRINT_LIMIT=500 react-app-rewired test",
     "test:ci": "react-app-rewired test --runInBand --coverage --watchAll=false",
     "lint": "eslint src/",
     "fake": "front-hub fake"
