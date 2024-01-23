@@ -33,8 +33,7 @@ module.exports = {
       name: 'workflow-service',
       rootDir: '<rootDir>/src/api/mock',
       endpoints: {
-        development: '/',
-        production: 'https://api.my-project.com',
+        development: 'http://localhost:5000/workflow-service',
       },
     },
   ],
