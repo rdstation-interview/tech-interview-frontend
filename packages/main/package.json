@@ -22,9 +22,9 @@
   "devDependencies": {
     "@resultadosdigitais/browserslist-config": "^2.0.0",
     "@resultadosdigitais/eslint-config-react": "^2.5.0",
-    "@resultadosdigitais/front-hub": "^7.1.2",
-    "@resultadosdigitais/front-hub-cli": "^7.1.2",
-    "@resultadosdigitais/front-hub-commons": "^7.1.2",
+    "@resultadosdigitais/front-hub": "^9.4.3",
+    "@resultadosdigitais/front-hub-cli": "^9.4.3",
+    "@resultadosdigitais/front-hub-commons": "^9.4.3",
     "@resultadosdigitais/international-g11n": "^1.0.9",
     "@resultadosdigitais/prettier-config": "^2.1.0",
     "@resultadosdigitais/translator-manager": "^2.0.11",
