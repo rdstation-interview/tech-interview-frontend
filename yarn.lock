@@ -3848,7 +3848,7 @@ __metadata:
     "@resultadosdigitais/front-hub-commons": ^9.4.3
     "@resultadosdigitais/international-g11n": ^1.0.9
     "@resultadosdigitais/prettier-config": ^2.1.0
-    "@resultadosdigitais/tangram-components": ^8.14.0
+    "@resultadosdigitais/tangram-components": ^8.16.0
     "@resultadosdigitais/translator-manager": ^2.0.11
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^12.1.5
@@ -3897,19 +3897,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@resultadosdigitais/tangram-components@npm:^8.14.0":
-  version: 8.14.0
-  resolution: "@resultadosdigitais/tangram-components@npm:8.14.0::__archiveUrl=https%3A%2F%2Fresultadosdigitais.jfrog.io%2Fresultadosdigitais%2Fapi%2Fnpm%2Fnpm%2F%40resultadosdigitais%2Ftangram-components%2F-%2F%40resultadosdigitais%2Ftangram-components-8.14.0.tgz"
+"@resultadosdigitais/tangram-components@npm:^8.16.0":
+  version: 8.16.0
+  resolution: "@resultadosdigitais/tangram-components@npm:8.16.0::__archiveUrl=https%3A%2F%2Fresultadosdigitais.jfrog.io%2Fresultadosdigitais%2Fapi%2Fnpm%2Fnpm%2F%40resultadosdigitais%2Ftangram-components%2F-%2F%40resultadosdigitais%2Ftangram-components-8.16.0.tgz"
   dependencies:
     "@popperjs/core": 2.7.0
     "@restart/hooks": ^0.3.22
-    "@resultadosdigitais/tangram-design-tokens": 3.8.0
-    "@resultadosdigitais/tangram-react-icons": 3.9.0
+    "@resultadosdigitais/tangram-design-tokens": 3.9.0
+    "@resultadosdigitais/tangram-react-icons": 3.11.0
     bezier-easing: ^2.1.0
     country-flag-icons: ^1.4.10
     hoist-non-react-statics: ^3.3.2
     inputmask: ^5.0.6
-    phone: 3.1.6
+    libphonenumber-js: ^1.10.49
+    lodash.camelcase: ^4.3.0
     react-fast-compare: ^3.2.0
     react-popper: ^2.2.5
     react-transition-group: ^4.4.1
@@ -3920,20 +3921,20 @@ __metadata:
     react: ^16.12.0
     react-dom: ^16.12.0
     styled-components: ^5.2.3
-  checksum: f82970b846c9ed522eeeedb987210d4d8be1fbaa5df39e956056d738e73a10968063c84a82638c74c7cd25f716b9db2302c81419e099625ef030750ac912ef43
+  checksum: fe1895bc4b7230e6bc72086ac302645e85e67b0c6ddd96d32e50fba3e8117782efce40983bf27ec9724afd44d7054e7f42d15685b11edd7593925ac7cb17829a
   languageName: node
   linkType: hard
 
-"@resultadosdigitais/tangram-design-tokens@npm:3.8.0":
-  version: 3.8.0
-  resolution: "@resultadosdigitais/tangram-design-tokens@npm:3.8.0::__archiveUrl=https%3A%2F%2Fresultadosdigitais.jfrog.io%2Fresultadosdigitais%2Fapi%2Fnpm%2Fnpm%2F%40resultadosdigitais%2Ftangram-design-tokens%2F-%2F%40resultadosdigitais%2Ftangram-design-tokens-3.8.0.tgz"
-  checksum: 636e032d2da76680076b0f0906450ae7b3486ca1051c60da9210aa212b6eb7726b27327050ad149b1cb457588293cc6dac6e6ed21001049c485092070cfd2225
-  languageName: node
-  linkType: hard
-
-"@resultadosdigitais/tangram-react-icons@npm:3.9.0":
+"@resultadosdigitais/tangram-design-tokens@npm:3.9.0":
   version: 3.9.0
-  resolution: "@resultadosdigitais/tangram-react-icons@npm:3.9.0::__archiveUrl=https%3A%2F%2Fresultadosdigitais.jfrog.io%2Fresultadosdigitais%2Fapi%2Fnpm%2Fnpm%2F%40resultadosdigitais%2Ftangram-react-icons%2F-%2F%40resultadosdigitais%2Ftangram-react-icons-3.9.0.tgz"
+  resolution: "@resultadosdigitais/tangram-design-tokens@npm:3.9.0::__archiveUrl=https%3A%2F%2Fresultadosdigitais.jfrog.io%2Fresultadosdigitais%2Fapi%2Fnpm%2Fnpm%2F%40resultadosdigitais%2Ftangram-design-tokens%2F-%2F%40resultadosdigitais%2Ftangram-design-tokens-3.9.0.tgz"
+  checksum: db018310aa1daaedb90b430c835dac8e767a1f3836ff01c55c8b3a7865e78e6b64ed26a67ece72fb62787230ec4bb6ef0348cb706a85c71dd027785b200ad073
+  languageName: node
+  linkType: hard
+
+"@resultadosdigitais/tangram-react-icons@npm:3.11.0":
+  version: 3.11.0
+  resolution: "@resultadosdigitais/tangram-react-icons@npm:3.11.0::__archiveUrl=https%3A%2F%2Fresultadosdigitais.jfrog.io%2Fresultadosdigitais%2Fapi%2Fnpm%2Fnpm%2F%40resultadosdigitais%2Ftangram-react-icons%2F-%2F%40resultadosdigitais%2Ftangram-react-icons-3.11.0.tgz"
   dependencies:
     "@babel/runtime": ^7.9.2
   peerDependencies:
@@ -3941,7 +3942,7 @@ __metadata:
     prop-types: ^15.7.2
     react: ^16.12.0
     react-dom: ^16.12.0
-  checksum: eab57c8a9c882c1a279ff5262b0ff10dca8bb0505dce91fa68d356096126bacf3684169d7dcb3105cdc6aea579b51a0997f84d5e5783853c4af43c8fe94fcea7
+  checksum: 85401611af9b186fb0115c675e3fbb5afd3c9c50c29bb1f5c4da0ef41f3767a25246d9f3b609e576a8ddb1e4c4001e34dd77a992f1780f349288bc98043e0439
   languageName: node
   linkType: hard
 
@@ -14142,6 +14143,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"libphonenumber-js@npm:^1.10.49":
+  version: 1.11.4
+  resolution: "libphonenumber-js@npm:1.11.4"
+  checksum: c5b2ffe64ab4d035467048723d57ff9312beb91afbb247fb7a3b7e837f4cd4c81d4e1fa65e5de4c729e0520a340585a24a9426e6bb92e946623a3c81f0fb05ac
+  languageName: node
+  linkType: hard
+
 "lines-and-columns@npm:^1.1.6":
   version: 1.2.4
   resolution: "lines-and-columns@npm:1.2.4"
@@ -14281,6 +14289,13 @@ __metadata:
   version: 3.0.0
   resolution: "lodash._reinterpolate@npm:3.0.0"
   checksum: 06d2d5f33169604fa5e9f27b6067ed9fb85d51a84202a656901e5ffb63b426781a601508466f039c720af111b0c685d12f1a5c14ff8df5d5f27e491e562784b2
+  languageName: node
+  linkType: hard
+
+"lodash.camelcase@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "lodash.camelcase@npm:4.3.0"
+  checksum: cb9227612f71b83e42de93eccf1232feeb25e705bdb19ba26c04f91e885bfd3dd5c517c4a97137658190581d3493ea3973072ca010aab7e301046d90740393d1
   languageName: node
   linkType: hard
 
@@ -16603,13 +16618,6 @@ __metadata:
   version: 2.1.0
   resolution: "performance-now@npm:2.1.0"
   checksum: 534e641aa8f7cba160f0afec0599b6cecefbb516a2e837b512be0adbe6c1da5550e89c78059c7fabc5c9ffdf6627edabe23eb7c518c4500067a898fa65c2b550
-  languageName: node
-  linkType: hard
-
-"phone@npm:3.1.6":
-  version: 3.1.6
-  resolution: "phone@npm:3.1.6"
-  checksum: 7e8f4bb9712717c18345394c4f376e1b456354ac5dc256d94e8b08cca4ca7ced7202c9c2deea69307be98eb380e7e28b0ec3f7cd981451cf5f61a37ab9f2c9d3
   languageName: node
   linkType: hard
 
