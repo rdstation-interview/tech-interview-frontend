@@ -21,7 +21,10 @@
     "node": "^16.20.0"
   },
   "scripts": {
-    "main": "yarn workspace @resultadosdigitais/frontend-interview-main"
+    "api": "yarn main fake api --noLerna",
+    "main": "yarn workspace @resultadosdigitais/frontend-interview-main",
+    "start": "yarn main start",
+    "test": "yarn main test --watchAll"
   },
   "devDependencies": {
     "lerna": "^7.0.1"
