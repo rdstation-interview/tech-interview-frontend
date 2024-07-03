@@ -4,14 +4,15 @@ Repositório destinado à pratica de Code Session em nossas entrevistas de front
 
 # Setup
 
+- [ ] Instale as dependências com `yarn install`
 - [ ] Deixe as portas 3000 e 5000 com visibilidade pública
 - [ ] Altere o endpoint de desenvolvimento no [front-hub.confg.js](https://github.com/rdstation-interview/tech-interview-frontend/blob/main/packages/main/front-hub.config.js#L36), substituindo o http://localhost:5000 pelo endereço gerado pelo codespaces para esta porta.
 
 # Scripts disponíveis`
 
-- Execute o script que inicializa a API: `yarn main fake api`
-- Execute o script que inicializa o projeto: `yarn main start`
-- Execute o script que inicializa os testes: `yarn main test --watchAll`
+- Execute o script que inicializa o projeto: `yarn start`
+- Execute o script que inicializa a API: `yarn api`
+- Execute o script que inicializa os testes: `yarn test`
 
 ## Atenção
 
