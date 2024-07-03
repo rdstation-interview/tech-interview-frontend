@@ -8,7 +8,7 @@ module.exports = {
   context: {},
   metadata: {
     maintainers: [],
-    applicationHosts: [],
+    applicationHosts: [{ code: 'rd-mkt', routes: [] }],
   },
   log: {
     level: 'debug',
