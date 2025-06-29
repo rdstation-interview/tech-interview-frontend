@@ -4,19 +4,20 @@ Repositório destinado à pratica de Code Session em nossas entrevistas de front
 
 # Setup
 
-- [ ] Instale as dependências com `yarn install`
-- [ ] Deixe as portas 3000 e 5000 com visibilidade pública
+- [ ] Aguarde até que o arquivo de log `READY.log` apareça na raiz do projeto. Isso indica que as dependências foram instaladas com sucesso.
 - [ ] Altere o endpoint de desenvolvimento no [front-hub.confg.js](https://github.com/rdstation-interview/tech-interview-frontend/blob/main/packages/main/front-hub.config.js#L36), substituindo o http://localhost:5000 pelo endereço gerado pelo codespaces para esta porta.
+- [ ] Execute os testes em um terminal
+- [ ] Execute a api em outro terminal
+- [ ] Execute o projeto em outro terminal
+
+> [!WARNING]
+> **Sempre que um arquivo da API for atualizado, você precisa reinicializar a API.**
 
 # Scripts disponíveis`
 
 - Execute o script que inicializa o projeto: `yarn start`
 - Execute o script que inicializa a API: `yarn api`
 - Execute o script que inicializa os testes: `yarn test`
-
-## Atenção
-
-Sempre que um arquivo da API for atualizado, você precisa reinicializar a API.
 
 # Dicas
 
