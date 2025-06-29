@@ -8,6 +8,6 @@ echo "    npmAuthIdent: ${JFROG_USERNAME}:${JFROG_TOKEN}" >>~/.yarnrc.yml
 
 echo "> Executing 'yarn install' on web"
 yarn install
-echo "The dependencies were installed" >READY.md
+echo "The dependencies were installed." >READY.log
 
 exec bash
