@@ -15,6 +15,8 @@ export function startMirage({ environment = 'development' } = {}) {
           { id: 'WF03', name: 'Dia dos pais' },
         ]
 
+        // Implemente aqui as validações necessárias
+
         return null
       })
     },
