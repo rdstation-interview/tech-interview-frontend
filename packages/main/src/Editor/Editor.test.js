@@ -2,6 +2,7 @@ import { Theme } from '@resultadosdigitais/tangram-components'
 import { render as renderBase, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import Editor from './Editor'
+import { startMirage } from 'api/server'
 
 const render = Component =>
   renderBase(<Theme value={Theme.kinds.lina}>{Component}</Theme>)
@@ -14,6 +15,16 @@ const NAME_IN_USE_ERROR_MESSAGE =
   'O nome que você escolheu já está sendo utilizado.'
 
 describe('Editor', () => {
+  let server
+
+  beforeEach(() => {
+    server = startMirage({ environment: 'test' })
+  })
+
+  afterEach(() => {
+    server.shutdown()
+  })
+
   it('renders the unnamed workflow', () => {
     render(<Editor />)
 
