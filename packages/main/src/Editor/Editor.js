@@ -11,7 +11,7 @@ import { Pen } from '@resultadosdigitais/tangram-react-icons'
 import styled from 'styled-components'
 
 // Você pode chamar o endpoint de validação coma a função a seguir
-// import { validateName } from '../api'
+// import { validateWorkflowName } from '../api'
 
 const Root = styled.div`
   background: var(--neutral-surface-high-emphasis);
