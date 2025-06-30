@@ -1,5 +1,5 @@
 // src/mirage.js
-import { createServer, Model } from 'miragejs'
+import { createServer } from 'miragejs'
 
 export function startMirage({ environment = 'development' } = {}) {
   return createServer({
