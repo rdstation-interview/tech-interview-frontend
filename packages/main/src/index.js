@@ -1,15 +1,16 @@
-import { Connect } from '@resultadosdigitais/front-hub/react'
 import { Reset, Theme } from '@resultadosdigitais/tangram-components'
 import { startMirage } from 'api/server'
 import Editor from './Editor'
+import { render } from 'react-dom'
 
 if (process.env.NODE_ENV === 'development') {
   startMirage()
 }
 
-export default Connect(() => (
+render(
   <Theme value={Theme.kinds.lina}>
     <Reset />
     <Editor />
-  </Theme>
-))
+  </Theme>,
+  document.getElementById('root'),
+)
