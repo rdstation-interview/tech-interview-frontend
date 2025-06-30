@@ -20,8 +20,31 @@ Você precisa focar em 3 arquivos:
 
 E a documentação dos componentes mais usados é a seguinte:
 
-- [Modal](https://tangram.rdstation.com.br/examples/components/modal/)
-- [Form](https://tangram.rdstation.com.br/examples/components/form)
-- [Input](https://tangram.rdstation.com.br/examples/components/input)
-- [Text](https://tangram.rdstation.com.br/examples/components/text/)
-- [Button](https://tangram.rdstation.com.br/examples/components/button/)
+<ul>
+  <li>
+    <a href="https://tangram.rdstation.com.br/examples/components/modal" target="_blank">
+      Modal
+    </a>
+  </li>
+  <li>
+    <a href="https://tangram.rdstation.com.br/examples/components/form" target="_blank">
+      Form
+    </a>
+  </li>
+  <li>
+    <a href="https://tangram.rdstation.com.br/examples/components/button" target="_blank">
+      Button
+    </a>
+  </li>
+  <li>
+    <a href="https://tangram.rdstation.com.br/examples/components/input" target="_blank">
+      Input
+    </a>
+  </li>
+  <li>
+    <a href="https://tangram.rdstation.com.br/examples/components/text" target="_blank">
+      Text
+    </a>
+  </li>
+</ul>
+
